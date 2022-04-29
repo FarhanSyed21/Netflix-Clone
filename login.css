@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./images/banner-net.png);
+    overflow-x: hidden;
+}
+
+.container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-logo{
+    position: relative;
+    left: 50px;
+    top: 10px;
+    width: 200px;
+}
+
+form{
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: .3rem;
+    width: 450px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 50px;
+    margin-top: 1%;
+}
+
+form h1{
+    margin-bottom: 28px;
+}
+
+.form-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.form-group input{
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    border: none;
+    border-radius:.3rem;
+    outline: none;
+    color: white;
+    padding: 16px 20px 0;
+    font-size: 1rem;
+}
+
+.form-group label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #8c8c8c;
+    pointer-events: none;
+    transition: 200ms ease-in-out transform,
+                200ms ease-in-out font-size;
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label {
+    transform: translateY(-1.25rem);
+    font-size: 0.7rem;
+}
+
+form button{
+    width: 100%;
+    height: 48px;
+    font-size: 1rem;
+    background-color: #e50914;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin: 24px 0 12px;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember label{
+    font-size: 0.85rem;
+    color: #b3b3b3;
+}
+
+.remember a{
+    color: #b3b3b3;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.remember a:hover {
+    text-decoration: underline;
+}
+
+.facebook-login{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.facebook-login img {
+    width: 20px;
+    aspect-ratio: 1;
+    margin-right: 10px;
+}
+
+.facebook-login a {
+    color: #737373;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.Signup {
+    margin-top: 16px;
+}
+
+.Signup p {
+    color: #737373;
+}
+
+.Signup p a {
+    color: white;
+    text-decoration: none;
+}
+
+.Signup p a:hover{
+    text-decoration: underline;
+}
+
+.captcha {
+    font-size: 0.8rem;
+    color: #8c8c8c;
+    margin-top: 0.5rem;
+}
+
+.captcha a {
+    color: #0071eb;
+    text-decoration: none;
+}
+
+.captcha a:hover{
+    text-decoration: underline;
+}
